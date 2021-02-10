@@ -300,6 +300,7 @@
 \newcommand{\phone}[1]{\infofield{\faPhone}{#1}}
 \newcommand{\homepage}[2]{\infofield{\faHome}{\href{#2}{#1}}}
 \newcommand{\linkedin}[2]{\infofield{\faLinkedin}{\href{#2}{#1}}}
+\newcommand{\scholar}[2]{\infofield{\faGoogle}{\href{#2}{#1}}}
 \newcommand{\github}[2]{\infofield{\faGithub}{\href{#2}{#1}}}
 \newcommand{\orcid}[2]{\infofield{\aiOrcid}{\href{#2}{#1}}}
 \newcommand{\ads}[2]{\infofield{\aiADS}{\href{#2}{#1}}}
@@ -580,6 +581,19 @@
     \par
     \vspace{0.5em}
 }
+
+\newcommand{\award}[1]{%
+	\begin{minipage}[t]{3mm}%
+		\makebox[3mm][c]{\footnotesize \faFileText}
+	\end{minipage}%
+	\hspace{0.5em}%
+	\begin{minipage}[t]{\dimexpr \textwidth-0.5em-3mm}%
+		{\normalsize #1\par}
+	\end{minipage}%
+	\par
+	\vspace{0.5em}
+}
+
 
 % lists
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
